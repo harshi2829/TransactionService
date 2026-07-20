@@ -1,4 +1,4 @@
-package com.example.transactionservice.Seurity;
+package com.example.transactionservice.Security;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -50,9 +50,9 @@ public class JwtUtil {
             getClaims(token);
             return true;
         }
-
         catch(Exception e)
         {
+            System.out.println("JWT ERROR: " + e.getMessage()); // 👈 add this
             return false;
         }
     }

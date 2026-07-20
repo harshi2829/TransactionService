@@ -1,5 +1,4 @@
-package com.example.transactionservice.Seurity;
-import jakarta.servlet.FilterChain;
+package com.example.transactionservice.Security;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

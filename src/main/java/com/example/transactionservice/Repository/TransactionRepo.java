@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface TransactionRepo extends JpaRepository<TransactionEntity,Long> {
     List<TransactionEntity> findByAccountNo(String accountNo);
+
 }
