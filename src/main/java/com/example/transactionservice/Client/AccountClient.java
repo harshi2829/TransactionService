@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.math.BigDecimal;
 
-@FeignClient(name = "ACCOUNT-SERVICE")
+@FeignClient(name = "account-client", url = "${account.service.url}")
 public interface AccountClient {
     @PutMapping("/account/update-balance")
     void updateBalance(@RequestParam String accountNo,

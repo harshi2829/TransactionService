@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 @OpenAPIDefinition(
         info = @Info(
-                title = "Auth Service API",
+                title = "Transaction Service API",
                 version = "1.0",
-                description = "Banking System - Authentication Service"
+                description = "Banking System - Transaction Service."
         )
 )
 @SpringBootApplication
